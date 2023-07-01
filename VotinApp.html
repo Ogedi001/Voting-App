@@ -1,201 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap Site</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-  
-  <link rel="stylesheet" href="VotinApp.css">
-  </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Site</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@100;200;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/General.css">
+
+    <link rel="stylesheet" href="VotinApp.css">
+</head>
+
 <body class="lightMode">
 
     <div class="MODEL hidden">
         <div class="MODEL-CONTENT bg-secondary">
-         <h4 class="h4"></h4>
-         <button class="close  bg-light  btn-primary">close</button>
-       </div>
-    </div>
-   
-<nav class="navbar navbar-expand-lg navbar-dark " >
-    <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-        <img  src="images.png" alt="" style="width:3rem;" class=""> NIGERIA
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      
-        <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Sign up</a>
-            </li>
-              <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Candidate Profile</a>
-              </li>  
-            <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Voters Register</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">FAQ</a>
-            </li>  
-        </ul>
-        <label class="h4 ms-auto switch">Theme: 
-            <input id="switch" type="checkbox">
-            <span class="slider"></span>
-          </label>
-          <span id="light" class="h4 ms-5 switch ">Light Mode</span>
-    </div>
-</div>
-</nav>
-<div class="row ">
-    <div class="col-9  "style=" border: 1px solid">
-        <div id="center" class="row ">
-            <div class="col-lg-4 col-md-6  "style=" border: 1px solid">
-                <img id="Img" src="images/APC.jpeg" alt="" class="rounded-circle" >
-                <p class="ptag">Asiwaju Bola Tinubu</p>
-                <h5>APC</h5>
-                <button class="manifesto"><span class="text">Manifesto</span></button>
-                <button value="Apc" id="vote">Vote Now</button>
-            </div>
-            <div id="center" class="col-lg-4 col-md-6  "style=" border: 1px solid">
-                <img id="Img" src="images/PDP.jpeg" alt="" class="rounded-circle" >
-                <p class="ptag">Atiku Abubakar</p>
-                <h5>PDP</h5>
-                <button class="manifesto"><span class="text">Manifesto</span></button>
-                <button value="Pdp" id="vote">Vote Now</button>
-            </div>
-            <div id="center" class="col-lg-4 col-md-6   "style=" border: 1px  ">
-                
-                <img id="Img" src="images/LP.jpeg" alt="" class="rounded-circle">
-               <div class="center"> 
-                <p class="ptag">Peter Obi</p>
-                <h5>LP</h5>
-                <button class="manifesto"><span class="text">Manifesto</span></button>
-                <button value="Lp" id="vote">Vote Now</button> </div>
-            </div>
-        </div>
-        <div class="row ">
-            <div id="center"class="col-lg-4 col-md-6  "style=" border: 1px solid">
-                <img id="Img" src="images/APP.jpeg" alt="" class="rounded-circle" >
-                <p class="ptag">Osita Nnadi</p>
-                <h5>APP</h5>
-                <button class="manifesto"><span class="text">Manifesto</span></button>
-                <button value="App" id="vote">Vote Now</button>
-            </div>
-            <div id="center" class="col-lg-4 col-md-6   "style=" border: 1px solid">
-                <img id="Img" src="images/PRP.jpeg" alt="" class="rounded-circle" >
-                <p class="ptag">Abiola Kolawole</p>
-                <h5>PRP</h5>
-                <button class="manifesto"><span class="text">Manifesto</span></button>
-                <button value="Prp" id="vote">Vote Now</button>
-            </div>
-            <div  id="center" class="col-lg-4 col-md-6   "style=" border: 1px solid">
-                <img id="Img" src="images/NNPP.jpeg" alt="" class="rounded-circle" >
-                <p class="ptag">Rabiu Musa Kwankwaso</p>
-                <h5>NNPP</h5>
-                <button class="manifesto"><span class="text">Manifesto</span></button>
-                <button value="Nnpp" id="vote">Vote Now</button>
-            </div>
-           
-        </div>
-        <div class="row ">
-            <div id="center" class="col-lg-4 col-md-6  "style=" border: 1px solid">
-                
-                <img id="Img" src="images/AAC.jpeg" alt="" class="rounded-circle" >
-                <p class="ptag">Omoyele Sowere</p>
-                <h5>ACC</h5>
-                <button class="manifesto"><span class="text">Manifesto</span></button>
-                <button value="Aac" id="vote">Vote Now</button>
-            </div>
-            <div id="center" class="col-lg-4 col-md-6   "style=" border: 1px solid">
-                
-                <img id="Img" src="images/APGA.jpeg" alt="" class="rounded-circle" >
-                <p class="ptag">Chukwudi Umeadi </p>
-                <h5>APGA</h5>
-                <button class="manifesto"><span class="text">Manifesto</span></button>
-                <button value="Apga" id="vote">Vote Now</button>
-            </div>
-            <div id="center" class="col-lg-4 col-md-6   "style=" border: 1px solid">
-                <img id="Img" src="images/YPP.jpeg" alt="" class="rounded-circle" >
-                <p class="ptag">Ado-Ibrahim Abdulmalik</p>
-                <h5>YPP</h5>
-                <button class="manifesto"><span class="text">Manifesto</span></button>
-                <button value="Ypp" id="vote">Vote Now</button>
-            </div>
-           
+            <h4 class="h4"></h4>
+            <button class="close  bg-light  btn-primary">close</button>
         </div>
     </div>
 
-    <div class="col-3  "style=" border: 1px solid">
-        <h3 class="mb-5">🇳🇬Real Time Results</h3>
-        
-     
-        <button  type="button" class="btn btn-info " > Show Results</button>
- <div class="result border border-dark text-dark bg-light ">
-        <h4 class="my-4 ">APC <span class="Apc"></span></h4>
-        <hr>
-        <h4 class="my-4 ">PDP <span class="Pdp span"></span></h4>
-        <hr>
-        <h4 class="my-4 ">LP <span class="Lp span"></span></h4>
-        <hr>
-        <h4 class="my-4 ">APP <span class="App span"></span></h4>
-        <hr>
-        <h4 class="my-4 ">PRP <span class="Prp span"></span></h4>
-        <hr>
-        <h4 class="my-4 ">NNPP <span class="Nnpp span"></span></h4>
-        <hr>
-        <h4 class="my-4 ">AAC <span class="Aac span"></span></h4>
-        <hr>
-        <h4 class="my-4 ">APGA <span class="Apga span"></span></h4>
-        <hr>
-        <h4 class="my-4 ">YPP <span class="Ypp"></span></h4> 
-        <button type="button" class="btn btn-secondary  float-right"> close</button> 
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images.png" alt="" style="width:3rem;" class=""> NIGERIA
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
 
-       
- </div>
-</div>
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Sign up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Candidate Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Voters Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">FAQ</a>
+                    </li>
+                </ul>
+                <label class="h4 ms-auto switch">Theme:
+                    <input id="switch" type="checkbox">
+                    <span class="slider"></span>
+                </label>
+                <span id="light" class="h4 ms-5 switch ">Light Mode</span>
+            </div>
+        </div>
+    </nav>
+    <div class="row ">
+        <div class="col-9  " style=" border: 1px solid">
+            <div id="center" class="row ">
+                <div class="col-lg-4 col-md-6  " style=" border: 1px solid">
+                    <img id="Img" src="images/APC.jpeg" alt="" class="rounded-circle">
+                    <p class="ptag">Asiwaju Bola Tinubu</p>
+                    <h5>APC</h5>
+                    <button class="manifesto"><span class="text">Manifesto</span></button>
+                    <button value="Apc" id="vote">Vote Now</button>
+                </div>
+                <div id="center" class="col-lg-4 col-md-6  " style=" border: 1px solid">
+                    <img id="Img" src="images/PDP.jpeg" alt="" class="rounded-circle">
+                    <p class="ptag">Atiku Abubakar</p>
+                    <h5>PDP</h5>
+                    <button class="manifesto"><span class="text">Manifesto</span></button>
+                    <button value="Pdp" id="vote">Vote Now</button>
+                </div>
+                <div id="center" class="col-lg-4 col-md-6   " style=" border: 1px  ">
 
- <footer class="">
- <div class=" d d-flex text-light">
-    <h6 class=" m-3">Get in touch with us on social networks: </h6>
-  <div class="d-flex ml-auto">
-    <i class="bi bi-facebook text-light m-3 " ></i>
-    <i class="bi bi-google text-light m-3" ></i>
-    <i class="bi bi-instagram text-light m-3"></i> 
-    <i class="bi bi-linkedin text-light m-3"></i>
-    <i class="bi bi-twitter text-light m-3 " ></i>
-  </div>
+                    <img id="Img" src="images/LP.jpeg" alt="" class="rounded-circle">
+                    <div class="center">
+                        <p class="ptag">Peter Obi</p>
+                        <h5>LP</h5>
+                        <button class="manifesto"><span class="text">Manifesto</span></button>
+                        <button value="Lp" id="vote">Vote Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div id="center" class="col-lg-4 col-md-6  " style=" border: 1px solid">
+                    <img id="Img" src="images/APP.jpeg" alt="" class="rounded-circle">
+                    <p class="ptag">Osita Nnadi</p>
+                    <h5>APP</h5>
+                    <button class="manifesto"><span class="text">Manifesto</span></button>
+                    <button value="App" id="vote">Vote Now</button>
+                </div>
+                <div id="center" class="col-lg-4 col-md-6   " style=" border: 1px solid">
+                    <img id="Img" src="images/PRP.jpeg" alt="" class="rounded-circle">
+                    <p class="ptag">Abiola Kolawole</p>
+                    <h5>PRP</h5>
+                    <button class="manifesto"><span class="text">Manifesto</span></button>
+                    <button value="Prp" id="vote">Vote Now</button>
+                </div>
+                <div id="center" class="col-lg-4 col-md-6   " style=" border: 1px solid">
+                    <img id="Img" src="images/NNPP.jpeg" alt="" class="rounded-circle">
+                    <p class="ptag">Rabiu Musa Kwankwaso</p>
+                    <h5>NNPP</h5>
+                    <button class="manifesto"><span class="text">Manifesto</span></button>
+                    <button value="Nnpp" id="vote">Vote Now</button>
+                </div>
 
-</div>
-<ul class=" row foot">
-    <li class="col-lg-4 col-md-6 "> <a class="" href="#"><i class="bi bi-arrow-left-circle-fill" style="color:#103d10; font-size: 2rem;"></i> LOG-OUT</a></li>
-    <li class="col-lg-4 col-md-6"> 
-        <a href="#"><i class="bi bi-person-circle " style="color:#103d10;font-size: 2rem;"></i> Contact</a> 
-        <p><i class="bi bi-house-door-fill " style="color:#103d10;"></i>Aba Rd, PHC</p>
-        <P><i class="bi bi-envelope-fill" style="color:#103d10;"></i>ogedifaour2@gmail.com</P>
-        <p><i class="bi bi-telephone-fill  " style="color:#103d10;"></i>+2348130088400</p>
-    </li>
-   
-    <li class="col-lg-4 col-md-6 "><a href="#"><i class="bi bi-info-circle-fill" style="color:#103d10;font-size: 2rem;"></i> About-us </a> 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, omnis.</p></li>
-</ul>
+            </div>
+            <div class="row ">
+                <div id="center" class="col-lg-4 col-md-6  " style=" border: 1px solid">
 
-    <p class="text-light copyright">©2022 Copyright: Naija-Election</p>
- 
-</footer>
+                    <img id="Img" src="images/AAC.jpeg" alt="" class="rounded-circle">
+                    <p class="ptag">Omoyele Sowere</p>
+                    <h5>ACC</h5>
+                    <button class="manifesto"><span class="text">Manifesto</span></button>
+                    <button value="Aac" id="vote">Vote Now</button>
+                </div>
+                <div id="center" class="col-lg-4 col-md-6   " style=" border: 1px solid">
 
- 
+                    <img id="Img" src="images/APGA.jpeg" alt="" class="rounded-circle">
+                    <p class="ptag">Chukwudi Umeadi </p>
+                    <h5>APGA</h5>
+                    <button class="manifesto"><span class="text">Manifesto</span></button>
+                    <button value="Apga" id="vote">Vote Now</button>
+                </div>
+                <div id="center" class="col-lg-4 col-md-6   " style=" border: 1px solid">
+                    <img id="Img" src="images/YPP.jpeg" alt="" class="rounded-circle">
+                    <p class="ptag">Ado-Ibrahim Abdulmalik</p>
+                    <h5>YPP</h5>
+                    <button class="manifesto"><span class="text">Manifesto</span></button>
+                    <button value="Ypp" id="vote">Vote Now</button>
+                </div>
 
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
- <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" 
- integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
-</script>
-<script src="VotinApp.js"></script>
+            </div>
+        </div>
+
+        <div class="col-3  " style=" border: 1px solid">
+            <h3 class="mb-5">🇳🇬Real Time Results</h3>
+
+
+            <button type="button" class="btn btn-info "> Show Results</button>
+            <div class="result border border-dark text-dark bg-light ">
+                <h4 class="my-4 ">APC <span class="Apc"></span></h4>
+                <hr>
+                <h4 class="my-4 ">PDP <span class="Pdp span"></span></h4>
+                <hr>
+                <h4 class="my-4 ">LP <span class="Lp span"></span></h4>
+                <hr>
+                <h4 class="my-4 ">APP <span class="App span"></span></h4>
+                <hr>
+                <h4 class="my-4 ">PRP <span class="Prp span"></span></h4>
+                <hr>
+                <h4 class="my-4 ">NNPP <span class="Nnpp span"></span></h4>
+                <hr>
+                <h4 class="my-4 ">AAC <span class="Aac span"></span></h4>
+                <hr>
+                <h4 class="my-4 ">APGA <span class="Apga span"></span></h4>
+                <hr>
+                <h4 class="my-4 ">YPP <span class="Ypp"></span></h4>
+                <button type="button" class="btn btn-secondary  float-right"> close</button>
+
+
+            </div>
+        </div>
+
+        <footer class="">
+            <div class=" d d-flex text-light">
+                <h6 class=" m-3">Get in touch with us on social networks: </h6>
+                <div class="d-flex ml-auto">
+                    <i class="bi bi-facebook text-light m-3 "></i>
+                    <i class="bi bi-google text-light m-3"></i>
+                    <i class="bi bi-instagram text-light m-3"></i>
+                    <i class="bi bi-linkedin text-light m-3"></i>
+                    <i class="bi bi-twitter text-light m-3 "></i>
+                </div>
+
+            </div>
+            <ul class=" row foot">
+                <li class="col-lg-4 col-md-6 "> <a class="" href="#"><i class="bi bi-arrow-left-circle-fill"
+                            style="color:#103d10; font-size: 2rem;"></i> LOG-OUT</a></li>
+                <li class="col-lg-4 col-md-6">
+                    <a href="#"><i class="bi bi-person-circle " style="color:#103d10;font-size: 2rem;"></i> Contact</a>
+                    <p><i class="bi bi-house-door-fill " style="color:#103d10;"></i>Aba Rd, PHC</p>
+                    <P><i class="bi bi-envelope-fill" style="color:#103d10;"></i>ogedifaour2@gmail.com</P>
+                    <p><i class="bi bi-telephone-fill  " style="color:#103d10;"></i>+2348130088400</p>
+                </li>
+
+                <li class="col-lg-4 col-md-6 "><a href="#"><i class="bi bi-info-circle-fill"
+                            style="color:#103d10;font-size: 2rem;"></i> About-us </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, omnis.</p>
+                </li>
+            </ul>
+
+            <p class="text-light copyright">©2022 Copyright: Naija-Election</p>
+
+        </footer>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+            integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
+            </script>
+        <script src="VotinApp.js"></script>
 </body>
+
 </html>
